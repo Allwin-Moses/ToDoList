@@ -1,0 +1,174 @@
+﻿@model List<Github_project_1.Models.Entity>
+
+@{
+    ViewBag.Title = "To-Do List";
+}
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+<style>
+    body {
+        background: linear-gradient(135deg, #f0f4ff 0%, #d9e8ff 100%);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+        padding: 40px 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffffcc;
+        border-radius: 20px;
+        padding: 30px 40px;
+        box-shadow: 0 15px 40px rgba(0, 123, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #0d6efd;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        user-select: none;
+    }
+
+    .todo-input {
+        box-shadow: 0 8px 15px rgba(13, 110, 253, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .todo-input:focus-within {
+        box-shadow: 0 12px 25px rgba(13, 110, 253, 0.5);
+    }
+
+    .todo-input input {
+        border: none;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        border-radius: 50px 0 0 50px;
+        outline: none;
+    }
+
+    .todo-input button {
+        border-radius: 0 50px 50px 0;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 0 25px;
+        transition: background-color 0.3s ease;
+    }
+
+    .todo-input button:hover {
+        background-color: #0a58ca;
+        border-color: #0a58ca;
+    }
+
+    .todo-card {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 18px 25px;
+        margin-bottom: 18px;
+        box-shadow: 0 10px 20px rgba(0, 123, 255, 0.15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: default;
+        user-select: none;
+    }
+
+    .todo-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 123, 255, 0.3);
+    }
+
+    .task-name {
+        font-size: 1.2rem;
+        flex-grow: 1;
+        font-weight: 500;
+        color: #212529;
+    }
+
+    .task-completed {
+        text-decoration: line-through;
+        color: #6c757d;
+        font-style: italic;
+        user-select: text;
+    }
+
+    .actions button, .actions a {
+        margin-left: 12px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 12px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        user-select: none;
+        text-decoration: none;
+    }
+
+    .actions a.btn-outline-primary {
+        color: #0d6efd;
+        border-color: #0d6efd;
+    }
+    .actions a.btn-outline-primary:hover {
+        background-color: #0d6efd;
+        color: white;
+    }
+
+    .actions a.btn-outline-danger {
+        color: #dc3545;
+        border-color: #dc3545;
+    }
+    .actions a.btn-outline-danger:hover {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>
+
+<div class="container shadow-lg">
+    <h2>✅ My To-Do List <i class="bi bi-list-check"></i></h2>
+
+    <!-- Add Task Form -->
+    <form action="@Url.Action("Add", "Todo")" method="post" class="mb-4" autocomplete="off">
+        <div class="input-group todo-input">
+            <input type="text" name="TaskName" class="form-control" placeholder="📝 Enter a new task..." required />
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-plus-lg"></i> Add
+            </button>
+        </div>
+    </form>
+
+    <!-- Tasks List -->
+    @foreach (var task in Model)
+    {
+        <div class="todo-card" title="Task ID: @task.Id">
+            <div class="task-name @(task.IsCompleted ? "task-completed" : "")">
+                @(task.IsCompleted ? "✔️ " : "🔹 ") @task.TaskName
+            </div>
+            <div class="actions">
+                <a href="@Url.Action("ToggleComplete", "Todo", new { id = task.Id })" class="btn btn-outline-primary btn-sm" title="Mark as @(task.IsCompleted ? "Not Completed" : "Completed")">
+                    @if (task.IsCompleted)
+                    {
+                        <i class="bi bi-arrow-counterclockwise">Undo</i> 
+                    }
+                    else
+                    {
+                        <i class="bi bi-check-lg">Done</i> 
+                    }
+                </a>
+                <a href="@Url.Action("Delete", "Todo", new { id = task.Id })" class="btn btn-outline-danger btn-sm" title="Delete Task">
+                    <i class="bi bi-trash"></i> Delete
+                </a>
+            </div>
+        </div>
+    }
+</div>

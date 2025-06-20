@@ -1,0 +1,26 @@
+D:\ALLWIN\Github project 1\Github project 1\bin\Github project 1.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\Github project 1.pdb
+D:\ALLWIN\Github project 1\Github project 1\bin\Microsoft.Web.Infrastructure.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\Newtonsoft.Json.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Net.Http.Formatting.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Helpers.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Http.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Http.WebHost.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Mvc.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Razor.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.WebPages.Deployment.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.WebPages.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.WebPages.Razor.dll
+D:\ALLWIN\Github project 1\Github project 1\bin\Newtonsoft.Json.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Net.Http.Formatting.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Helpers.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Http.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Http.WebHost.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Mvc.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.Razor.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.WebPages.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.WebPages.Deployment.xml
+D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.WebPages.Razor.xml
+D:\ALLWIN\Github project 1\Github project 1\obj\Debug\Github project 1.csprojResolveAssemblyReference.cache
+D:\ALLWIN\Github project 1\Github project 1\obj\Debug\Github project 1.dll
+D:\ALLWIN\Github project 1\Github project 1\obj\Debug\Github project 1.pdb
