@@ -24,3 +24,32 @@ D:\ALLWIN\Github project 1\Github project 1\bin\System.Web.WebPages.Razor.xml
 D:\ALLWIN\Github project 1\Github project 1\obj\Debug\Github project 1.csprojResolveAssemblyReference.cache
 D:\ALLWIN\Github project 1\Github project 1\obj\Debug\Github project 1.dll
 D:\ALLWIN\Github project 1\Github project 1\obj\Debug\Github project 1.pdb
+C:\To-do\Github project 1\bin\Github project 1.dll.config
+C:\To-do\Github project 1\bin\Github project 1.dll
+C:\To-do\Github project 1\bin\Github project 1.pdb
+C:\To-do\Github project 1\bin\Microsoft.Web.Infrastructure.dll
+C:\To-do\Github project 1\bin\Newtonsoft.Json.dll
+C:\To-do\Github project 1\bin\System.Net.Http.Formatting.dll
+C:\To-do\Github project 1\bin\System.Web.Helpers.dll
+C:\To-do\Github project 1\bin\System.Web.Http.dll
+C:\To-do\Github project 1\bin\System.Web.Http.WebHost.dll
+C:\To-do\Github project 1\bin\System.Web.Mvc.dll
+C:\To-do\Github project 1\bin\System.Web.Razor.dll
+C:\To-do\Github project 1\bin\System.Web.WebPages.Deployment.dll
+C:\To-do\Github project 1\bin\System.Web.WebPages.dll
+C:\To-do\Github project 1\bin\System.Web.WebPages.Razor.dll
+C:\To-do\Github project 1\bin\Newtonsoft.Json.xml
+C:\To-do\Github project 1\bin\System.Net.Http.Formatting.xml
+C:\To-do\Github project 1\bin\System.Web.Helpers.xml
+C:\To-do\Github project 1\bin\System.Web.Http.xml
+C:\To-do\Github project 1\bin\System.Web.Http.WebHost.xml
+C:\To-do\Github project 1\bin\System.Web.Mvc.xml
+C:\To-do\Github project 1\bin\System.Web.Razor.xml
+C:\To-do\Github project 1\bin\System.Web.WebPages.xml
+C:\To-do\Github project 1\bin\System.Web.WebPages.Deployment.xml
+C:\To-do\Github project 1\bin\System.Web.WebPages.Razor.xml
+C:\To-do\Github project 1\obj\Debug\Github project 1.csproj.AssemblyReference.cache
+C:\To-do\Github project 1\obj\Debug\Github project 1.csproj.CoreCompileInputs.cache
+C:\To-do\Github project 1\obj\Debug\Github p.6611BABB.Up2Date
+C:\To-do\Github project 1\obj\Debug\Github project 1.dll
+C:\To-do\Github project 1\obj\Debug\Github project 1.pdb
