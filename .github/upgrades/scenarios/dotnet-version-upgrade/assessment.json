@@ -1,0 +1,3024 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-11-11T11:30:29.4256108Z",
+  "analysisEndTime": "2026-11-11T11:30:36.4778752Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 13,
+      "incidents": 117,
+      "effort": 117
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 66,
+        "Optional": 2,
+        "Potential": 49,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 12,
+        "Project": 2,
+        "Feature": 5,
+        "Api": 98
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "Github project 1\\Github project 1.csproj",
+      "startingProject": true,
+      "issues": 12,
+      "storyPoints": 117,
+      "properties": {
+        "appName": "Github project 1",
+        "projectKind": "Wap",
+        "frameworks": [
+          "net48"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": false,
+        "isTestProject": false,
+        "numberOfFiles": 15,
+        "numberOfCodeFiles": 9,
+        "linesTotal": 603,
+        "linesOfCode": 418,
+        "totalApiScanned": 183,
+        "minLinesOfCodeToChange": 98,
+        "maxLinesOfCodeToChange": 98
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "0dc573a0-b4f7-4f89-8df9-6505f0d19fca",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Mvc, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.Mvc, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.AspNet.Mvc, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.Mvc, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.Mvc 4.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Mvc",
+              "PackageVersion": "4.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "70bef25d-77ee-4c74-9f4f-c8a51a258a7d",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Razor, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.Razor, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.AspNet.Razor, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.Razor, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.Razor 2.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Razor",
+              "PackageVersion": "2.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "682c3392-8fd2-4faf-887a-be4bd2c39044",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.WebApi, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.AspNet.WebApi, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.WebApi, 4.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.WebApi 4.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi",
+              "PackageVersion": "4.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d07bb54a-6c08-46cf-8825-fe2a7a166b64",
+          "ruleId": "NuGet.0001",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.Client, 4.0.20710.0\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0",
+              "protected": "Microsoft.AspNet.WebApi.Client, 4.0.20710.0\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.Client, 4.0.20710.0\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.Client, 4.0.20710.0\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0",
+            "label": "Microsoft.AspNet.WebApi.Client 4.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Client",
+              "PackageVersion": "4.0.20710.0",
+              "PackageNewVersion": "6.0.0",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e9379d86-b8fd-4fbb-b9da-3874b3ff4fd3",
+          "ruleId": "NuGet.0001",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.Core, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.Core, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.Core, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.Core, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.Core 4.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Core",
+              "PackageVersion": "4.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "98d384f1-3fca-4743-ac7b-7e50e7cae0b3",
+          "ruleId": "NuGet.0001",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.WebHost, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.WebHost, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.WebHost, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.WebHost, 4.0.20710.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.WebHost 4.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.WebHost",
+              "PackageVersion": "4.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b4628fea-cc72-4272-8f3f-25942330c691",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebPages, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.WebPages, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.AspNet.WebPages, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.WebPages, 2.0.20710.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.WebPages 2.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebPages",
+              "PackageVersion": "2.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "a60e01f9-fbe3-442c-92a9-8d983e345589",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nRemove Microsoft.Net.Http, and replace with new package System.Net.Http 4.3.4",
+              "protected": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nRemove Microsoft.Net.Http, and replace with new package System.Net.Http 4.3.4"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nRemove Microsoft.Net.Http, and replace with new package System.Net.Http 4.3.4",
+            "protectedSnippet": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nRemove Microsoft.Net.Http, and replace with new package System.Net.Http 4.3.4",
+            "label": "Microsoft.Net.Http 2.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.Net.Http",
+              "PackageVersion": "2.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": "Replace with new package System.Net.Http=4.3.4"
+            }
+          }
+        },
+        {
+          "incidentId": "85371a27-344c-4c78-aeb8-908eb28e4972",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.Web.Infrastructure 1.0.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Web.Infrastructure",
+              "PackageVersion": "1.0.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "204cb2ac-0366-4207-a206-d684c9fbdeac",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+              "protected": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "label": "Newtonsoft.Json 4.5.6",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "4.5.6",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "4799e9ab-47c8-46f3-89bf-49a5abecde0c",
+          "ruleId": "NuGet.0005",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Net.Http, 2.0.20710.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Net.Http 2.0.20710.0",
+            "properties": {
+              "PackageId": "Microsoft.Net.Http",
+              "PackageVersion": "2.0.20710.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d0358bac-c8d5-439f-9f72-fc7b31c4ca47",
+          "ruleId": "NuGet.0004",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+              "protected": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 4.5.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "label": "Newtonsoft.Json 4.5.6",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "4.5.6",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "af1f964a-7cc4-49a2-9b28-93e3f3f86a27",
+          "ruleId": "Project.0001",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj"
+          }
+        },
+        {
+          "incidentId": "06b448f4-535c-4fee-afd2-8ff8bcf09ad5",
+          "ruleId": "Project.0002",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: .NETFramework,Version=v4.8\nRecommended target framework: net10.0",
+              "protected": "Current target framework: .NETFramework,Version=v4.8\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Github project 1.csproj",
+            "snippet": "Current target framework: .NETFramework,Version=v4.8\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: .NETFramework,Version=v4.8\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": ".NETFramework,Version=v4.8",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "b4bb3059-749c-4626-ac1b-1457c7dd1270",
+          "ruleId": "Feature.1000",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs"
+          }
+        },
+        {
+          "incidentId": "447513b1-7ff5-4836-9502-c638aa0c1376",
+          "ruleId": "Feature.0003",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs"
+          }
+        },
+        {
+          "incidentId": "bd60b659-85df-4438-9460-7bd1a6f7703c",
+          "ruleId": "Feature.0003",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\FilterConfig.cs"
+          }
+        },
+        {
+          "incidentId": "6ffd9d69-d623-4150-9ca8-3322bb5fc2f3",
+          "ruleId": "Feature.0002",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs"
+          }
+        },
+        {
+          "incidentId": "dc9e312e-a007-4d65-98a3-9e6bbd7694df",
+          "ruleId": "Feature.0002",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs"
+          }
+        },
+        {
+          "incidentId": "093a3c7c-93df-46ed-b1eb-dd00485cfec8",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Mvc.ActionResult is no longer supported. Use Microsoft.AspNetCore.Mvc.ActionResult instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public ActionResult Delete(int id)",
+              "protected": "T:System.Web.Mvc.ActionResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "public ActionResult Delete(int id)",
+            "protectedSnippet": "T:System.Web.Mvc.ActionResult",
+            "label": "T:System.Web.Mvc.ActionResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 34,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "8e0c5cbf-2848-4316-aac9-65fe58ddd301",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return RedirectToAction(\u0022View1\u0022);",
+              "protected": "T:System.Web.Mvc.RedirectToRouteResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return RedirectToAction(\u0022View1\u0022);",
+            "protectedSnippet": "T:System.Web.Mvc.RedirectToRouteResult",
+            "label": "T:System.Web.Mvc.RedirectToRouteResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d30625a0-1a1c-4c1f-a5c9-6d0fd8418466",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return RedirectToAction(\u0022View1\u0022);",
+              "protected": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return RedirectToAction(\u0022View1\u0022);",
+            "protectedSnippet": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)",
+            "label": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "aafa1c13-b98b-4dc4-9161-6c86909469cc",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Mvc.ActionResult is no longer supported. Use Microsoft.AspNetCore.Mvc.ActionResult instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public ActionResult ToggleComplete(int id)",
+              "protected": "T:System.Web.Mvc.ActionResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "public ActionResult ToggleComplete(int id)",
+            "protectedSnippet": "T:System.Web.Mvc.ActionResult",
+            "label": "T:System.Web.Mvc.ActionResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 28,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "437654df-425d-441a-a3f0-b39208033f6b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return RedirectToAction(\u0022View1\u0022);",
+              "protected": "T:System.Web.Mvc.RedirectToRouteResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return RedirectToAction(\u0022View1\u0022);",
+            "protectedSnippet": "T:System.Web.Mvc.RedirectToRouteResult",
+            "label": "T:System.Web.Mvc.RedirectToRouteResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 31,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "670f1b08-8228-4360-b1f0-6c7fa0274194",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return RedirectToAction(\u0022View1\u0022);",
+              "protected": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return RedirectToAction(\u0022View1\u0022);",
+            "protectedSnippet": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)",
+            "label": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 31,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7795148c-57fa-4935-a6c5-3bbc89607af0",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Mvc.ActionResult is no longer supported. Use Microsoft.AspNetCore.Mvc.ActionResult instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public ActionResult Add(string TaskName)",
+              "protected": "T:System.Web.Mvc.ActionResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "public ActionResult Add(string TaskName)",
+            "protectedSnippet": "T:System.Web.Mvc.ActionResult",
+            "label": "T:System.Web.Mvc.ActionResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 21,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "c8fb9e6d-5680-4412-b55a-b394ac7bf7a4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpPost",
+              "protected": "M:System.Web.Mvc.HttpPostAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "HttpPost",
+            "protectedSnippet": "M:System.Web.Mvc.HttpPostAttribute.#ctor",
+            "label": "M:System.Web.Mvc.HttpPostAttribute.#ctor",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 21,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "787568ca-4365-416a-aadc-13e7c4834388",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Mvc.HttpPostAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.HttpPostAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpPost",
+              "protected": "T:System.Web.Mvc.HttpPostAttribute"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "HttpPost",
+            "protectedSnippet": "T:System.Web.Mvc.HttpPostAttribute",
+            "label": "T:System.Web.Mvc.HttpPostAttribute",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 21,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "a5595824-2d53-42d8-9226-1d5808540479",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return RedirectToAction(\u0022View1\u0022);",
+              "protected": "T:System.Web.Mvc.RedirectToRouteResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return RedirectToAction(\u0022View1\u0022);",
+            "protectedSnippet": "T:System.Web.Mvc.RedirectToRouteResult",
+            "label": "T:System.Web.Mvc.RedirectToRouteResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "30ec7185-9869-4fd5-bd7e-a223aca0f977",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return RedirectToAction(\u0022View1\u0022);",
+              "protected": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return RedirectToAction(\u0022View1\u0022);",
+            "protectedSnippet": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)",
+            "label": "M:System.Web.Mvc.Controller.RedirectToAction(System.String)",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "04cf0bc5-bb01-40bf-a38d-cf7549020302",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Mvc.ActionResult is no longer supported. Use Microsoft.AspNetCore.Mvc.ActionResult instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public ActionResult View1()",
+              "protected": "T:System.Web.Mvc.ActionResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "public ActionResult View1()",
+            "protectedSnippet": "T:System.Web.Mvc.ActionResult",
+            "label": "T:System.Web.Mvc.ActionResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "12edd44f-b48c-4e4f-aebd-fb8ebb3d5355",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Mvc.ViewResult is no longer supported. Use Microsoft.AspNetCore.Mvc.ViewResult instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return View(tasks);",
+              "protected": "T:System.Web.Mvc.ViewResult"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return View(tasks);",
+            "protectedSnippet": "T:System.Web.Mvc.ViewResult",
+            "label": "T:System.Web.Mvc.ViewResult",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e362d049-cf0f-46b4-a7ef-c10d9977fb98",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return View(tasks);",
+              "protected": "M:System.Web.Mvc.Controller.View(System.Object)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "return View(tasks);",
+            "protectedSnippet": "M:System.Web.Mvc.Controller.View(System.Object)",
+            "label": "M:System.Web.Mvc.Controller.View(System.Object)",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9d7a4fa6-81a5-4392-97b3-4e4ddf23c409",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Controller",
+              "protected": "M:System.Web.Mvc.Controller.#ctor"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "Controller",
+            "protectedSnippet": "M:System.Web.Mvc.Controller.#ctor",
+            "label": "M:System.Web.Mvc.Controller.#ctor",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 9,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "29e81ec4-2c83-4e05-a4e1-66353a7bd0f3",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Mvc.Controller is no longer supported. Use Microsoft.AspNetCore.Mvc.Controller instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Controller",
+              "protected": "T:System.Web.Mvc.Controller"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Controllers\\TodoController.cs",
+            "snippet": "Controller",
+            "protectedSnippet": "T:System.Web.Mvc.Controller",
+            "label": "T:System.Web.Mvc.Controller",
+            "properties": {
+              "CharCount": "934"
+            },
+            "line": 9,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "d295aa39-7b2f-453c-9a66-14d99f1e1a2b",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.ExecuteNonQuery();",
+              "protected": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.ExecuteNonQuery();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery",
+            "label": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 69,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "57454870-0175-4db5-a178-014abc567321",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "con.Open();",
+              "protected": "M:System.Data.SqlClient.SqlConnection.Open"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "con.Open();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.Open",
+            "label": "M:System.Data.SqlClient.SqlConnection.Open",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 68,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "0343a606-e260-4c3b-b00d-f9fca58d7b7a",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "T:System.Data.SqlClient.SqlParameterCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlParameterCollection",
+            "label": "T:System.Data.SqlClient.SqlParameterCollection",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 67,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "5a1c613a-b50a-427b-a3df-46b4e23c7948",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "P:System.Data.SqlClient.SqlCommand.Parameters"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlCommand.Parameters",
+            "label": "P:System.Data.SqlClient.SqlCommand.Parameters",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 67,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "6b77b005-c7e4-4bef-b2b9-159499c7ccaf",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "T:System.Data.SqlClient.SqlParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlParameter",
+            "label": "T:System.Data.SqlClient.SqlParameter",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 67,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "347303b0-1145-4b57-8873-d7d9dda9db07",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)",
+            "label": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 67,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "4af3e588-6e9b-42d7-a914-c56ca3a4fc02",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.CommandType = CommandType.StoredProcedure;",
+              "protected": "P:System.Data.SqlClient.SqlCommand.CommandType"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.CommandType = CommandType.StoredProcedure;",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "label": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 66,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "03708b92-46a1-40a0-bb63-497ce172585d",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);",
+              "protected": "T:System.Data.SqlClient.SqlCommand"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlCommand",
+            "label": "T:System.Data.SqlClient.SqlCommand",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 65,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "66ecd84f-a2d7-4a05-ac0e-ca5de8488219",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);",
+              "protected": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "label": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 65,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "89e36c5c-ec25-4228-ace9-08066c16f513",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+              "protected": "T:System.Data.SqlClient.SqlConnection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlConnection",
+            "label": "T:System.Data.SqlClient.SqlConnection",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 63,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "70eb9c96-880d-4747-8046-c108f743c7c2",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+              "protected": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022DeleteTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "label": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 63,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "4589e4b6-a46c-4444-9718-ab12809ca657",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.ExecuteNonQuery();",
+              "protected": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.ExecuteNonQuery();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery",
+            "label": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 57,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "b3d66776-d971-4e6d-8779-47322ce8910f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "con.Open();",
+              "protected": "M:System.Data.SqlClient.SqlConnection.Open"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "con.Open();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.Open",
+            "label": "M:System.Data.SqlClient.SqlConnection.Open",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 56,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "b08930d7-5dc7-4750-aff5-fd3c75ad96dc",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "T:System.Data.SqlClient.SqlParameterCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlParameterCollection",
+            "label": "T:System.Data.SqlClient.SqlParameterCollection",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 55,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "fb9d78d0-0edf-4d67-9f51-6fcda729c634",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "P:System.Data.SqlClient.SqlCommand.Parameters"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlCommand.Parameters",
+            "label": "P:System.Data.SqlClient.SqlCommand.Parameters",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 55,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "2a25eda9-cf24-45d0-b7f3-95c67f76b2f1",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "T:System.Data.SqlClient.SqlParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlParameter",
+            "label": "T:System.Data.SqlClient.SqlParameter",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 55,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "6fd53aa8-9013-4b40-aa70-06b566554db8",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+              "protected": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)",
+            "label": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 55,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "7a3a6dc0-4d22-4d29-8371-15aa7ba1a6e6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.CommandType = CommandType.StoredProcedure;",
+              "protected": "P:System.Data.SqlClient.SqlCommand.CommandType"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.CommandType = CommandType.StoredProcedure;",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "label": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 54,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "45c127e5-cb19-4cce-b6d2-c75d37c25eed",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);",
+              "protected": "T:System.Data.SqlClient.SqlCommand"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlCommand",
+            "label": "T:System.Data.SqlClient.SqlCommand",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 53,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "c1e6140b-f6cd-46ff-813c-9f544c8df2f5",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);",
+              "protected": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "label": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 53,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "7d2c5f59-f67f-47e0-8a3e-b7b3a2192d02",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+              "protected": "T:System.Data.SqlClient.SqlConnection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlConnection",
+            "label": "T:System.Data.SqlClient.SqlConnection",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 51,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "99d3f3aa-fb5f-4ed3-b1ef-f97e574b5016",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+              "protected": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022ToggleTaskCompletion\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@Id\u0022, id);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "label": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 51,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "53bfe0da-e638-4536-937b-258628303a58",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.ExecuteNonQuery();",
+              "protected": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.ExecuteNonQuery();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery",
+            "label": "M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 45,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "f50cfbd8-c7b8-42b0-8d95-68e85e053d17",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "con.Open();",
+              "protected": "M:System.Data.SqlClient.SqlConnection.Open"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "con.Open();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.Open",
+            "label": "M:System.Data.SqlClient.SqlConnection.Open",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 44,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "bcce19a3-d495-43b3-b537-76070b688ac0",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+              "protected": "T:System.Data.SqlClient.SqlParameterCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlParameterCollection",
+            "label": "T:System.Data.SqlClient.SqlParameterCollection",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 43,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "4b714209-e69e-44bc-befb-d4c5f22bab2f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+              "protected": "P:System.Data.SqlClient.SqlCommand.Parameters"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlCommand.Parameters",
+            "label": "P:System.Data.SqlClient.SqlCommand.Parameters",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 43,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "29fca859-5c3d-45c7-8282-6a1a2144c024",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+              "protected": "T:System.Data.SqlClient.SqlParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlParameter",
+            "label": "T:System.Data.SqlClient.SqlParameter",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 43,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "4d2d506c-c0a1-4dcf-b9eb-62c8574ef6ee",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+              "protected": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)",
+            "label": "M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 43,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "f09c4da4-650d-4877-869b-55151d34cb10",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.CommandType = CommandType.StoredProcedure;",
+              "protected": "P:System.Data.SqlClient.SqlCommand.CommandType"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.CommandType = CommandType.StoredProcedure;",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "label": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 42,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "cce4e779-ef2f-4fcd-8fbd-2e6008a217d7",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);",
+              "protected": "T:System.Data.SqlClient.SqlCommand"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlCommand",
+            "label": "T:System.Data.SqlClient.SqlCommand",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 41,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "2d75aee5-59da-4d7e-9646-eef6ed21fe9d",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);",
+              "protected": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "label": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 41,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "c786e53d-e78c-4acc-912a-4c5a4644e213",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+              "protected": "T:System.Data.SqlClient.SqlConnection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlConnection",
+            "label": "T:System.Data.SqlClient.SqlConnection",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "287286bf-0353-4af7-89e6-6e718e54935d",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+              "protected": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022AddTask\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                cmd.Parameters.AddWithValue(\u0022@TaskName\u0022, taskName);\r\n                con.Open();\r\n                cmd.ExecuteNonQuery();\r\n            }",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "label": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cb1750a0-5ddc-4cce-8960-e39bbdd8d179",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });",
+              "protected": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)",
+            "label": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 26,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "1399fed1-57a3-4aef-b7ff-5c5217d13a2f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });",
+              "protected": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)",
+            "label": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 26,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "cde2a52d-076e-4854-b134-ee067be9ef17",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });",
+              "protected": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)",
+            "label": "P:System.Data.SqlClient.SqlDataReader.Item(System.String)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 26,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "1cbd5272-a41b-4e64-a01a-96a4355d0729",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "while (reader.Read())\r\n                {\r\n                    tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });\r\n                }",
+              "protected": "M:System.Data.SqlClient.SqlDataReader.Read"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "while (reader.Read())\r\n                {\r\n                    tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });\r\n                }",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlDataReader.Read",
+            "label": "M:System.Data.SqlClient.SqlDataReader.Read",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 24,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "a27baa43-322f-4892-a52f-64284b11f79a",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlDataReader reader = cmd.ExecuteReader();",
+              "protected": "T:System.Data.SqlClient.SqlDataReader"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlDataReader reader = cmd.ExecuteReader();",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlDataReader",
+            "label": "T:System.Data.SqlClient.SqlDataReader",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 23,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "84912588-7492-463e-bb89-356ea508b577",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlDataReader reader = cmd.ExecuteReader();",
+              "protected": "M:System.Data.SqlClient.SqlCommand.ExecuteReader"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlDataReader reader = cmd.ExecuteReader();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.ExecuteReader",
+            "label": "M:System.Data.SqlClient.SqlCommand.ExecuteReader",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 23,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "30e49f27-a96d-4e45-a3d6-7852d1726c23",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "con.Open();",
+              "protected": "M:System.Data.SqlClient.SqlConnection.Open"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "con.Open();",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.Open",
+            "label": "M:System.Data.SqlClient.SqlConnection.Open",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 22,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "4957ba7c-8f23-41ac-b537-bb9db7b52bcc",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "cmd.CommandType = CommandType.StoredProcedure;",
+              "protected": "P:System.Data.SqlClient.SqlCommand.CommandType"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "cmd.CommandType = CommandType.StoredProcedure;",
+            "protectedSnippet": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "label": "P:System.Data.SqlClient.SqlCommand.CommandType",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 21,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "22fe9848-8523-44df-a1aa-45671f88075b",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);",
+              "protected": "T:System.Data.SqlClient.SqlCommand"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlCommand",
+            "label": "T:System.Data.SqlClient.SqlCommand",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 20,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "1c780676-8a2c-49eb-a3be-c3952a1f9aaa",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);",
+              "protected": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "label": "M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 20,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "a734d8b7-8ddd-4c42-a713-36e35bd5c37c",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                con.Open();\r\n                SqlDataReader reader = cmd.ExecuteReader();\r\n                while (reader.Read())\r\n                {\r\n                    tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });\r\n                }\r\n            }",
+              "protected": "T:System.Data.SqlClient.SqlConnection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                con.Open();\r\n                SqlDataReader reader = cmd.ExecuteReader();\r\n                while (reader.Read())\r\n                {\r\n                    tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });\r\n                }\r\n            }",
+            "protectedSnippet": "T:System.Data.SqlClient.SqlConnection",
+            "label": "T:System.Data.SqlClient.SqlConnection",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3720a450-f23a-4811-b2fe-def96606e5c6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Data.SqlClient, 4.8.6. Add package reference to System.Data.SqlClient, 4.8.6",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                con.Open();\r\n                SqlDataReader reader = cmd.ExecuteReader();\r\n                while (reader.Read())\r\n                {\r\n                    tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });\r\n                }\r\n            }",
+              "protected": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Models\\dataaccess.cs",
+            "snippet": "using (SqlConnection con = new SqlConnection(connectionString))\r\n            {\r\n                SqlCommand cmd = new SqlCommand(\u0022GetAllTasks\u0022, con);\r\n                cmd.CommandType = CommandType.StoredProcedure;\r\n                con.Open();\r\n                SqlDataReader reader = cmd.ExecuteReader();\r\n                while (reader.Read())\r\n                {\r\n                    tasks.Add(new Entity\r\n                    {\r\n                        Id = Convert.ToInt32(reader[\u0022Id\u0022]),\r\n                        TaskName = reader[\u0022TaskName\u0022].ToString(),\r\n                        IsCompleted = Convert.ToBoolean(reader[\u0022IsCompleted\u0022])\r\n                    });\r\n                }\r\n            }",
+            "protectedSnippet": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "label": "M:System.Data.SqlClient.SqlConnection.#ctor(System.String)",
+            "properties": {
+              "PackageId": "System.Data.SqlClient",
+              "PackageNewVersion": "4.8.6",
+              "CharCount": "2535"
+            },
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d6d9ea31-eb58-409e-afdc-57ce1919f6e2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public static void Register(HttpConfiguration config)",
+              "protected": "T:System.Web.Http.HttpConfiguration"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "public static void Register(HttpConfiguration config)",
+            "protectedSnippet": "T:System.Web.Http.HttpConfiguration",
+            "label": "T:System.Web.Http.HttpConfiguration",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 9,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "0cbd619e-c928-4e50-8218-c73e4f839bfd",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.RouteParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.RouteParameter",
+            "label": "T:System.Web.Http.RouteParameter",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "8f6ec3bd-ee03-400a-9e86-aac6cd8afadb",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.RouteParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.RouteParameter",
+            "label": "T:System.Web.Http.RouteParameter",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f4156f1b-b7e0-4bff-b3c2-6c4f41893861",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "F:System.Web.Http.RouteParameter.Optional"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "F:System.Web.Http.RouteParameter.Optional",
+            "label": "F:System.Web.Http.RouteParameter.Optional",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "06f6c642-bae6-441e-92a7-d01f2ff8a02d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.RouteParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.RouteParameter",
+            "label": "T:System.Web.Http.RouteParameter",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "59a13776-a7b0-4f8d-b23f-86ac4562f11f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.HttpRouteCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.HttpRouteCollection",
+            "label": "T:System.Web.Http.HttpRouteCollection",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "986fef92-6d9a-43ca-a4a2-f8d046655a4c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "P:System.Web.Http.HttpConfiguration.Routes"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "P:System.Web.Http.HttpConfiguration.Routes",
+            "label": "P:System.Web.Http.HttpConfiguration.Routes",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cbad6f58-5c2c-4fc2-b188-4a8474c2ba6d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.HttpRouteCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.HttpRouteCollectionExtensions",
+            "label": "T:System.Web.Http.HttpRouteCollectionExtensions",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a1d9b804-9968-4910-b9e6-f238f8fea439",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.Routing.IHttpRoute"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.Routing.IHttpRoute",
+            "label": "T:System.Web.Http.Routing.IHttpRoute",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6cebed98-57e5-4e63-832c-15e4f5e919f7",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "M:System.Web.Http.HttpRouteCollectionExtensions.MapHttpRoute(System.Web.Http.HttpRouteCollection,System.String,System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "M:System.Web.Http.HttpRouteCollectionExtensions.MapHttpRoute(System.Web.Http.HttpRouteCollection,System.String,System.String,System.Object)",
+            "label": "M:System.Web.Http.HttpRouteCollectionExtensions.MapHttpRoute(System.Web.Http.HttpRouteCollection,System.String,System.String,System.Object)",
+            "properties": {
+              "CharCount": "482"
+            },
+            "line": 11,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d70309e7-9db7-42a6-bae3-daca4adde26b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+              "protected": "T:System.Web.Routing.RouteTable"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+            "protectedSnippet": "T:System.Web.Routing.RouteTable",
+            "label": "T:System.Web.Routing.RouteTable",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 20,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7ad5ab8b-401d-4e2e-bc48-e36f03fa98fc",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+              "protected": "T:System.Web.Routing.RouteCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+            "protectedSnippet": "T:System.Web.Routing.RouteCollection",
+            "label": "T:System.Web.Routing.RouteCollection",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 20,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b09d2ba7-9ba6-4cb0-b30c-21be0bdb30c5",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+              "protected": "P:System.Web.Routing.RouteTable.Routes"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+            "protectedSnippet": "P:System.Web.Routing.RouteTable.Routes",
+            "label": "P:System.Web.Routing.RouteTable.Routes",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 20,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a63482de-998e-4a23-9aa3-fcbc1aa17f44",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);",
+              "protected": "T:System.Web.Mvc.GlobalFilters"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);",
+            "protectedSnippet": "T:System.Web.Mvc.GlobalFilters",
+            "label": "T:System.Web.Mvc.GlobalFilters",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 19,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1f4d6fc9-ca7a-4550-8f36-a1b6c2d705d4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);",
+              "protected": "T:System.Web.Mvc.GlobalFilterCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);",
+            "protectedSnippet": "T:System.Web.Mvc.GlobalFilterCollection",
+            "label": "T:System.Web.Mvc.GlobalFilterCollection",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 19,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e97d2284-8a8c-4648-bc31-485a6bb7f03c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);",
+              "protected": "P:System.Web.Mvc.GlobalFilters.Filters"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);",
+            "protectedSnippet": "P:System.Web.Mvc.GlobalFilters.Filters",
+            "label": "P:System.Web.Mvc.GlobalFilters.Filters",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 19,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d449bd04-87d1-41a0-b904-1bd5f1944675",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "WebApiConfig.Register(GlobalConfiguration.Configuration);",
+              "protected": "T:System.Web.Http.GlobalConfiguration"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "WebApiConfig.Register(GlobalConfiguration.Configuration);",
+            "protectedSnippet": "T:System.Web.Http.GlobalConfiguration",
+            "label": "T:System.Web.Http.GlobalConfiguration",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "5cf9d1ce-2ce2-4e04-af7e-36e237c703ce",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "WebApiConfig.Register(GlobalConfiguration.Configuration);",
+              "protected": "T:System.Web.Http.HttpConfiguration"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "WebApiConfig.Register(GlobalConfiguration.Configuration);",
+            "protectedSnippet": "T:System.Web.Http.HttpConfiguration",
+            "label": "T:System.Web.Http.HttpConfiguration",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d8d70300-369e-4fb1-948c-7ff30f691887",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "WebApiConfig.Register(GlobalConfiguration.Configuration);",
+              "protected": "P:System.Web.Http.GlobalConfiguration.Configuration"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "WebApiConfig.Register(GlobalConfiguration.Configuration);",
+            "protectedSnippet": "P:System.Web.Http.GlobalConfiguration.Configuration",
+            "label": "P:System.Web.Http.GlobalConfiguration.Configuration",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d8d30426-2f62-4241-bff9-3ff71493cb8a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AreaRegistration.RegisterAllAreas();",
+              "protected": "T:System.Web.Mvc.AreaRegistration"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "AreaRegistration.RegisterAllAreas();",
+            "protectedSnippet": "T:System.Web.Mvc.AreaRegistration",
+            "label": "T:System.Web.Mvc.AreaRegistration",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 16,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "168720e6-4be2-4ea9-a5cf-a7a6959d7e79",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AreaRegistration.RegisterAllAreas();",
+              "protected": "M:System.Web.Mvc.AreaRegistration.RegisterAllAreas"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "AreaRegistration.RegisterAllAreas();",
+            "protectedSnippet": "M:System.Web.Mvc.AreaRegistration.RegisterAllAreas",
+            "label": "M:System.Web.Mvc.AreaRegistration.RegisterAllAreas",
+            "properties": {
+              "CharCount": "719"
+            },
+            "line": 16,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c7f3ccb0-4ac9-40dd-b4c7-0f3e28b64ae5",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpApplication",
+              "protected": "M:System.Web.HttpApplication.#ctor"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "HttpApplication",
+            "protectedSnippet": "M:System.Web.HttpApplication.#ctor",
+            "label": "M:System.Web.HttpApplication.#ctor",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0",
+              "CharCount": "719"
+            },
+            "line": 12,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "ef187ed7-63a3-4b1e-84b8-900593bd742d",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpApplication",
+              "protected": "T:System.Web.HttpApplication"
+            },
+            "kind": "File",
+            "path": "Github project 1\\Global.asax.cs",
+            "snippet": "HttpApplication",
+            "protectedSnippet": "T:System.Web.HttpApplication",
+            "label": "T:System.Web.HttpApplication",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0",
+              "CharCount": "719"
+            },
+            "line": 12,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "9c15c46c-32e8-4f14-b7f9-4688a0080b8f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public static void RegisterGlobalFilters(GlobalFilterCollection filters)",
+              "protected": "T:System.Web.Mvc.GlobalFilterCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\FilterConfig.cs",
+            "snippet": "public static void RegisterGlobalFilters(GlobalFilterCollection filters)",
+            "protectedSnippet": "T:System.Web.Mvc.GlobalFilterCollection",
+            "label": "T:System.Web.Mvc.GlobalFilterCollection",
+            "properties": {
+              "CharCount": "279"
+            },
+            "line": 7,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "b668a65c-34f2-49bf-9803-4f5f2897fead",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "filters.Add(new HandleErrorAttribute());",
+              "protected": "T:System.Web.Mvc.HandleErrorAttribute"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\FilterConfig.cs",
+            "snippet": "filters.Add(new HandleErrorAttribute());",
+            "protectedSnippet": "T:System.Web.Mvc.HandleErrorAttribute",
+            "label": "T:System.Web.Mvc.HandleErrorAttribute",
+            "properties": {
+              "CharCount": "279"
+            },
+            "line": 9,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d329b8ca-1a55-4128-b9f2-745e362541f3",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "filters.Add(new HandleErrorAttribute());",
+              "protected": "M:System.Web.Mvc.HandleErrorAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\FilterConfig.cs",
+            "snippet": "filters.Add(new HandleErrorAttribute());",
+            "protectedSnippet": "M:System.Web.Mvc.HandleErrorAttribute.#ctor",
+            "label": "M:System.Web.Mvc.HandleErrorAttribute.#ctor",
+            "properties": {
+              "CharCount": "279"
+            },
+            "line": 9,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "2567cd92-647f-43e8-be65-f821b4d10e76",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "filters.Add(new HandleErrorAttribute());",
+              "protected": "M:System.Web.Mvc.GlobalFilterCollection.Add(System.Object)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\FilterConfig.cs",
+            "snippet": "filters.Add(new HandleErrorAttribute());",
+            "protectedSnippet": "M:System.Web.Mvc.GlobalFilterCollection.Add(System.Object)",
+            "label": "M:System.Web.Mvc.GlobalFilterCollection.Add(System.Object)",
+            "properties": {
+              "CharCount": "279"
+            },
+            "line": 9,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "27d98457-bb74-4fd8-bd4b-8c64b99bab7e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public static void RegisterRoutes(RouteCollection routes)",
+              "protected": "T:System.Web.Routing.RouteCollection"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "public static void RegisterRoutes(RouteCollection routes)",
+            "protectedSnippet": "T:System.Web.Routing.RouteCollection",
+            "label": "T:System.Web.Routing.RouteCollection",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 11,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "3d212f41-a0dd-4bbb-ad96-f72ea187691c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Mvc.UrlParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Mvc.UrlParameter",
+            "label": "T:System.Web.Mvc.UrlParameter",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6a5aae42-b6c6-4aa4-816a-d60d34abadb1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Mvc.UrlParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Mvc.UrlParameter",
+            "label": "T:System.Web.Mvc.UrlParameter",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c5328c11-c010-4e11-a96d-c045a3b95668",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+              "protected": "F:System.Web.Mvc.UrlParameter.Optional"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+            "protectedSnippet": "F:System.Web.Mvc.UrlParameter.Optional",
+            "label": "F:System.Web.Mvc.UrlParameter.Optional",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b9e6d375-6ae9-47f4-b13a-9578d83fd087",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Mvc.UrlParameter"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Mvc.UrlParameter",
+            "label": "T:System.Web.Mvc.UrlParameter",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "35e97adc-e9b0-4bd1-87ae-ddc6fbdf3e6a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Mvc.RouteCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Mvc.RouteCollectionExtensions",
+            "label": "T:System.Web.Mvc.RouteCollectionExtensions",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "564f0e93-bfd8-46ad-9b02-ac8032237c11",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Routing.Route"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Routing.Route",
+            "label": "T:System.Web.Routing.Route",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "077fec8d-e996-4232-bd67-37c6d8629a60",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+              "protected": "M:System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.MapRoute(\r\n                name: \u0022Default\u0022,\r\n                url: \u0022{controller}/{action}/{id}\u0022,\r\n                defaults: new { controller = \u0022Todo\u0022, action = \u0022View1\u0022, id = UrlParameter.Optional }\r\n            );",
+            "protectedSnippet": "M:System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object)",
+            "label": "M:System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object)",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "82d8d490-af54-4ab8-ab47-07e2348dcdad",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.IgnoreRoute(\u0022{resource}.axd/{*pathInfo}\u0022);",
+              "protected": "T:System.Web.Mvc.RouteCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.IgnoreRoute(\u0022{resource}.axd/{*pathInfo}\u0022);",
+            "protectedSnippet": "T:System.Web.Mvc.RouteCollectionExtensions",
+            "label": "T:System.Web.Mvc.RouteCollectionExtensions",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 13,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "4b230838-991e-4692-891c-2dd9fc619968",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Github project 1\\Github project 1.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routes.IgnoreRoute(\u0022{resource}.axd/{*pathInfo}\u0022);",
+              "protected": "M:System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection,System.String)"
+            },
+            "kind": "File",
+            "path": "Github project 1\\App_Start\\RouteConfig.cs",
+            "snippet": "routes.IgnoreRoute(\u0022{resource}.axd/{*pathInfo}\u0022);",
+            "protectedSnippet": "M:System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection,System.String)",
+            "label": "M:System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection,System.String)",
+            "properties": {
+              "CharCount": "604"
+            },
+            "line": 13,
+            "column": 12
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "SystemWeb",
+          "incidents": [
+            "4b230838-991e-4692-891c-2dd9fc619968",
+            "82d8d490-af54-4ab8-ab47-07e2348dcdad",
+            "077fec8d-e996-4232-bd67-37c6d8629a60",
+            "564f0e93-bfd8-46ad-9b02-ac8032237c11",
+            "35e97adc-e9b0-4bd1-87ae-ddc6fbdf3e6a",
+            "b9e6d375-6ae9-47f4-b13a-9578d83fd087",
+            "c5328c11-c010-4e11-a96d-c045a3b95668",
+            "6a5aae42-b6c6-4aa4-816a-d60d34abadb1",
+            "3d212f41-a0dd-4bbb-ad96-f72ea187691c",
+            "27d98457-bb74-4fd8-bd4b-8c64b99bab7e",
+            "2567cd92-647f-43e8-be65-f821b4d10e76",
+            "d329b8ca-1a55-4128-b9f2-745e362541f3",
+            "b668a65c-34f2-49bf-9803-4f5f2897fead",
+            "9c15c46c-32e8-4f14-b7f9-4688a0080b8f",
+            "ef187ed7-63a3-4b1e-84b8-900593bd742d",
+            "c7f3ccb0-4ac9-40dd-b4c7-0f3e28b64ae5",
+            "168720e6-4be2-4ea9-a5cf-a7a6959d7e79",
+            "d8d30426-2f62-4241-bff9-3ff71493cb8a",
+            "d8d70300-369e-4fb1-948c-7ff30f691887",
+            "5cf9d1ce-2ce2-4e04-af7e-36e237c703ce",
+            "d449bd04-87d1-41a0-b904-1bd5f1944675",
+            "e97d2284-8a8c-4648-bc31-485a6bb7f03c",
+            "1f4d6fc9-ca7a-4550-8f36-a1b6c2d705d4",
+            "a63482de-998e-4a23-9aa3-fcbc1aa17f44",
+            "b09d2ba7-9ba6-4cb0-b30c-21be0bdb30c5",
+            "7ad5ab8b-401d-4e2e-bc48-e36f03fa98fc",
+            "d70309e7-9db7-42a6-bae3-daca4adde26b",
+            "6cebed98-57e5-4e63-832c-15e4f5e919f7",
+            "a1d9b804-9968-4910-b9e6-f238f8fea439",
+            "cbad6f58-5c2c-4fc2-b188-4a8474c2ba6d",
+            "986fef92-6d9a-43ca-a4a2-f8d046655a4c",
+            "59a13776-a7b0-4f8d-b23f-86ac4562f11f",
+            "06f6c642-bae6-441e-92a7-d01f2ff8a02d",
+            "f4156f1b-b7e0-4bff-b3c2-6c4f41893861",
+            "8f6ec3bd-ee03-400a-9e86-aac6cd8afadb",
+            "0cbd619e-c928-4e50-8218-c73e4f839bfd",
+            "d6d9ea31-eb58-409e-afdc-57ce1919f6e2",
+            "29e81ec4-2c83-4e05-a4e1-66353a7bd0f3",
+            "9d7a4fa6-81a5-4392-97b3-4e4ddf23c409",
+            "e362d049-cf0f-46b4-a7ef-c10d9977fb98",
+            "12edd44f-b48c-4e4f-aebd-fb8ebb3d5355",
+            "04cf0bc5-bb01-40bf-a38d-cf7549020302",
+            "30ec7185-9869-4fd5-bd7e-a223aca0f977",
+            "a5595824-2d53-42d8-9226-1d5808540479",
+            "787568ca-4365-416a-aadc-13e7c4834388",
+            "c8fb9e6d-5680-4412-b55a-b394ac7bf7a4",
+            "7795148c-57fa-4935-a6c5-3bbc89607af0",
+            "670f1b08-8228-4360-b1f0-6c7fa0274194",
+            "437654df-425d-441a-a3f0-b39208033f6b",
+            "aafa1c13-b98b-4dc4-9161-6c86909469cc",
+            "d30625a0-1a1c-4c1f-a5c9-6d0fd8418466",
+            "8e0c5cbf-2848-4316-aac9-65fe58ddd301",
+            "093a3c7c-93df-46ed-b1eb-dd00485cfec8"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0003": {
+      "id": "NuGet.0003",
+      "isFeature": false,
+      "description": "NuGet package functionality is included with framework reference.\n\nPackage needs to be removed.",
+      "label": "NuGet package functionality is included with framework reference",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262609",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "isFeature": false,
+      "description": "Project file needs to be converted to SDK-style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK-style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.1000": {
+      "id": "Feature.1000",
+      "isFeature": true,
+      "description": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs.",
+      "label": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.0003": {
+      "id": "Feature.0003",
+      "isFeature": true,
+      "description": "GlobalFilterCollection is not supported in .NET Core and needs to be converted to the corresponding middleware registrations on the application object.",
+      "label": "GlobalFilterCollection is not supported in .NET Core and needs to be converted to the corresponding middleware registrations on the application object",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.0002": {
+      "id": "Feature.0002",
+      "isFeature": true,
+      "description": "Routes registration via RouteCollection is not supported in .NET Core and needs to be converted to the route mappings on the application object.",
+      "label": "Routes registration via RouteCollection is not supported in .NET Core and needs to be converted to the route mappings on the application object",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "API is binary incompatible for selected .NET version: affects existing binaries, often requiring recompilation, because the API has changed in a way that prevents older binaries from loading or executing.",
+      "label": "Binary incompatible for selected .NET version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "SystemWeb": {
+      "id": "SystemWeb",
+      "isFeature": false,
+      "description": "Legacy ASP.NET Framework APIs for web applications (System.Web.*) that don\u0027t exist in ASP.NET Core due to architectural differences. ASP.NET Core represents a complete redesign of the web framework. Migrate to ASP.NET Core equivalents or consider System.Web.Adapters package for compatibility.",
+      "label": "ASP.NET Framework (System.Web)",
+      "severity": "Mandatory",
+      "effort": 4,
+      "links": [
+        {
+          "title": "Migrate from ASP.NET to ASP.NET Core",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341905",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}

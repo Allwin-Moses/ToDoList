@@ -1,0 +1,5 @@
+# 03-aspnet-core-migration: Rewrite hosting, configuration, data access, controllers, and views for ASP.NET Core
+
+Migrate the converted application to `net10.0` and ASP.NET Core. Replace Global.asax, System.Web MVC/Web API routing and filters, and legacy package references with a minimal hosting pipeline, dependency injection, structured logging, exception handling, validation, and ASP.NET Core MVC. Preserve the Entity model, existing stored procedure names/schema, and business behavior for `GetAllTasks`, `AddTask`, `ToggleTaskCompletion`, and `DeleteTask`. Modernize ADO.NET with `Microsoft.Data.SqlClient`, carry the `EmployeeManagementDb` LocalDB connection into `appsettings.json` without hardcoded credentials, and port the Razor view/static assets.
+
+**Done when**: The application targets `net10.0`; no production code depends on System.Web or legacy MVC/Web API packages; configuration is provided through `IConfiguration`; DI resolves the data-access/service/controller graph; all CRUD actions retain their original routes and stored-procedure contracts; validation, exception handling, and logging are present; the project builds without errors or warnings.
