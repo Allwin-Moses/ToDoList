@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Github_project_1.Models;
 
 namespace Github_project_1.Controllers
@@ -11,30 +7,41 @@ namespace Github_project_1.Controllers
     {
 
 
-        dataaccess ado = new dataaccess();
+        private readonly DataAccess _dataAccess;
 
-        public ActionResult View1()
+        public TodoController(DataAccess dataAccess)
         {
-            List<Entity> tasks = ado.GetAllTasks();
-            return View(tasks);
+            _dataAccess = dataAccess;
+        }
+
+        public IActionResult View1()
+        {
+            return View(_dataAccess.GetAllTasks());
         }
 
         [HttpPost]
-        public ActionResult Add(string TaskName)
+        [ValidateAntiForgeryToken]
+        public IActionResult Add([FromForm] string? taskName)
         {
-            ado.AddTask(TaskName);
+            if (string.IsNullOrWhiteSpace(taskName))
+            {
+                ModelState.AddModelError(nameof(taskName), "Task name is required.");
+                return RedirectToAction(nameof(View1));
+            }
+
+            _dataAccess.AddTask(taskName);
             return RedirectToAction("View1");
         }
 
-        public ActionResult ToggleComplete(int id)
+        public IActionResult ToggleComplete(int id)
         {
-            ado.ToggleComplete(id);
+            _dataAccess.ToggleTaskCompletion(id);
             return RedirectToAction("View1");
         }
 
-        public ActionResult Delete(int id)
+        public IActionResult Delete(int id)
         {
-            ado.DeleteTask(id);
+            _dataAccess.DeleteTask(id);
             return RedirectToAction("View1");
         }
 

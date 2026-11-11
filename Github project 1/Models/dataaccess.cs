@@ -1,73 +1,97 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 
 namespace Github_project_1.Models
 {
-    public class dataaccess
+    public sealed class DataAccess
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["info"].ConnectionString;
+        private readonly string _connectionString;
+        private readonly ILogger<DataAccess> _logger;
+
+        public DataAccess(IConfiguration configuration, ILogger<DataAccess> logger)
+        {
+            _connectionString = configuration.GetConnectionString("info")
+                ?? throw new InvalidOperationException("Connection string 'info' is not configured.");
+            _logger = logger;
+        }
 
         public List<Entity> GetAllTasks()
         {
-            List<Entity> tasks = new List<Entity>();
-            using (SqlConnection con = new SqlConnection(connectionString))
+            var tasks = new List<Entity>();
+            using var con = new SqlConnection(_connectionString);
+            using var cmd = new SqlCommand("GetAllTasks", con) { CommandType = CommandType.StoredProcedure };
+            try
             {
-                SqlCommand cmd = new SqlCommand("GetAllTasks", con);
-                cmd.CommandType = CommandType.StoredProcedure;
                 con.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                using var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     tasks.Add(new Entity
                     {
                         Id = Convert.ToInt32(reader["Id"]),
-                        TaskName = reader["TaskName"].ToString(),
+                        TaskName = reader["TaskName"] == DBNull.Value ? string.Empty : Convert.ToString(reader["TaskName"]) ?? string.Empty,
                         IsCompleted = Convert.ToBoolean(reader["IsCompleted"])
                     });
                 }
+            }
+            catch (SqlException exception)
+            {
+                _logger.LogError(exception, "Unable to retrieve tasks.");
+                throw;
             }
             return tasks;
         }
 
         public void AddTask(string taskName)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            if (string.IsNullOrWhiteSpace(taskName))
             {
-                SqlCommand cmd = new SqlCommand("AddTask", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TaskName", taskName);
+                throw new ArgumentException("Task name is required.", nameof(taskName));
+            }
+
+            using var con = new SqlConnection(_connectionString);
+            using var cmd = new SqlCommand("AddTask", con) { CommandType = CommandType.StoredProcedure };
+            cmd.Parameters.Add("@TaskName", SqlDbType.NVarChar, 200).Value = taskName.Trim();
+            try
+            {
                 con.Open();
                 cmd.ExecuteNonQuery();
+            }
+            catch (SqlException exception)
+            {
+                _logger.LogError(exception, "Unable to add task.");
+                throw;
             }
         }
 
-        public void ToggleComplete(int id)
+        public void ToggleTaskCompletion(int id)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand("ToggleTaskCompletion", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Id", id);
-                con.Open();
-                cmd.ExecuteNonQuery();
-            }
+            ExecuteById("ToggleTaskCompletion", id);
         }
 
         public void DeleteTask(int id)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            ExecuteById("DeleteTask", id);
+        }
+
+        private void ExecuteById(string procedureName, int id)
+        {
+            using var con = new SqlConnection(_connectionString);
+            using var cmd = new SqlCommand(procedureName, con) { CommandType = CommandType.StoredProcedure };
+            cmd.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+            try
             {
-                SqlCommand cmd = new SqlCommand("DeleteTask", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Id", id);
                 con.Open();
                 cmd.ExecuteNonQuery();
+            }
+            catch (SqlException exception)
+            {
+                _logger.LogError(exception, "Unable to execute stored procedure {ProcedureName} for task {TaskId}.", procedureName, id);
+                throw;
             }
         }
     }

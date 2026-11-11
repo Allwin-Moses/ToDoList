@@ -1,4 +1,4 @@
-﻿@model List<Github_project_1.Models.Entity>
+﻿@model IReadOnlyList<Github_project_1.Models.Entity>
 
 @{
     ViewBag.Title = "To-Do List";
@@ -138,9 +138,9 @@
     <h2>✅ My To-Do List <i class="bi bi-list-check"></i></h2>
 
     <!-- Add Task Form -->
-    <form action="@Url.Action("Add", "Todo")" method="post" class="mb-4" autocomplete="off">
+    <form asp-controller="Todo" asp-action="Add" method="post" class="mb-4" autocomplete="off">
         <div class="input-group todo-input">
-            <input type="text" name="TaskName" class="form-control" placeholder="📝 Enter a new task..." required />
+            <input type="text" name="taskName" class="form-control" placeholder="📝 Enter a new task..." required maxlength="200" />
             <button type="submit" class="btn btn-primary">
                 <i class="bi bi-plus-lg"></i> Add
             </button>
@@ -155,7 +155,7 @@
                 @(task.IsCompleted ? "✔️ " : "🔹 ") @task.TaskName
             </div>
             <div class="actions">
-                <a href="@Url.Action("ToggleComplete", "Todo", new { id = task.Id })" class="btn btn-outline-primary btn-sm" title="Mark as @(task.IsCompleted ? "Not Completed" : "Completed")">
+                <a asp-controller="Todo" asp-action="ToggleComplete" asp-route-id="@task.Id" class="btn btn-outline-primary btn-sm" title="Mark as @(task.IsCompleted ? "Not Completed" : "Completed")">
                     @if (task.IsCompleted)
                     {
                         <i class="bi bi-arrow-counterclockwise">Undo</i> 
@@ -165,7 +165,7 @@
                         <i class="bi bi-check-lg">Done</i> 
                     }
                 </a>
-                <a href="@Url.Action("Delete", "Todo", new { id = task.Id })" class="btn btn-outline-danger btn-sm" title="Delete Task">
+                <a asp-controller="Todo" asp-action="Delete" asp-route-id="@task.Id" class="btn btn-outline-danger btn-sm" title="Delete Task">
                     <i class="bi bi-trash"></i> Delete
                 </a>
             </div>
